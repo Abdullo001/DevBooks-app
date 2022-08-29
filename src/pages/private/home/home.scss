@@ -1,0 +1,145 @@
+.home {
+  min-height: 100vh;
+  padding-top: 54px;
+  background-color: #191919;
+}
+
+.home-hero {
+  position: relative;
+  padding-bottom: 148px;
+}
+
+.search {
+  position: absolute;
+  bottom: 20px;
+  left: calc(50% - 557px);
+  width: 1114px;
+
+  // display: flex;
+  // align-items: center;
+  // flex-direction: column;
+
+  padding-top: 40px;
+  padding-bottom: 35.5px;
+  background-color: #191919;
+  box-shadow: 0px 4px 77px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+.search-title {
+  margin: 0;
+  margin-bottom: 13px;
+  padding: 0;
+
+  text-align: center;
+  font-weight: 400;
+  font-size: 31px;
+  line-height: 34px;
+
+  color: #c9ac8c;
+}
+
+.search-form {
+  // width: 710px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-input {
+  display: inline-block;
+  width: 710px;
+  padding: 15.5px 27px;
+  border: none;
+  background: #404040;
+  border-radius: 15px;
+  margin-right: 14px;
+}
+
+.search-btn {
+  display: flex;
+  align-items: center;
+
+  padding: 16px 48px 16px 39px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #3c2710;
+
+  background: #c9ac8c;
+  border-radius: 15px;
+
+  svg {
+    margin-right: 10px;
+    font-size: 22px;
+  }
+}
+
+.main-title {
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 31px;
+  padding: 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 31px;
+  line-height: 34px;
+  color: #c9ac8c;
+}
+
+.main-list {
+  margin: 0;
+  margin-bottom: 48px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  list-style-type: none;
+}
+
+.main-item {
+  margin-right: 69px;
+}
+
+.main-link {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  transition: all ease 0.3s;
+
+  &:hover {
+    color: #c9ac8c;
+  }
+}
+
+.main-item {
+  .active {
+    color: #c9ac8c;
+  }
+}
+
+.author-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.author-item{
+  margin-right: 37px;
+  margin-bottom: 41px;
+
+  &:nth-child(6){
+    margin-right: 0;
+  }
+}
+
+

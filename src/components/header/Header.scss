@@ -1,0 +1,134 @@
+header {
+  padding: 22px 0;
+  background-color: #191919;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  display: inline-block;
+
+  img {
+    object-fit: contain;
+    width: 96px;
+    height: 36px;
+  }
+}
+
+.header-nav {
+  flex-grow: 1;
+  margin-right: 150px;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0;
+  // margin-left: auto;
+  padding: 0;
+  list-style-type: none;
+}
+
+.header-item {
+  margin-right: 43.5px;
+
+  &:nth-child(5) {
+    margin-right: 0;
+  }
+
+  .active {
+    position: relative;
+
+    &:before {
+      position: absolute;
+      bottom: -30px;
+      left: 0;
+      display: inline-block;
+      width: 110%;
+      height: 2px;
+      background-color: #fff;
+
+      content: "";
+    }
+  }
+}
+
+.header-link {
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 144.4%;
+  color: #ffffff;
+}
+
+.header-user {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #ffffff50;
+
+  span {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    padding-top: 0.4px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+}
+
+.user-photo {
+  width: 100%;
+  height: 100%;
+}
+
+.user-panel {
+  position: absolute;
+  z-index: 3;
+  left: calc(0% + 30px);
+  top: calc(0% + 30px);
+  display: none;
+  // max-width: 700px;
+  width: 120px;
+  margin: 0;
+  padding: 0;
+  padding: 5px 15px;
+  list-style-type: none;
+  background-color: #404040;
+  transition: all ease 0.3s;
+}
+
+.user-set {
+  margin-bottom: 10px;
+
+  &:nth-child(4) {
+    margin-bottom: 0;
+  }
+
+  a {
+    color: #ffffff80;
+    text-decoration: none;
+  }
+
+  button {
+    width: 100%;
+    padding: 3px 0;
+    border: 0;
+    border-radius: 8px;
+    background-color: #f00;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+.header-user:hover .user-panel {
+  display: inline-block;
+}

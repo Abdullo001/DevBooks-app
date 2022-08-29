@@ -1,0 +1,266 @@
+.spb {
+  padding-top: 22px;
+  padding-bottom: 169px;
+  background-color: #191919;
+}
+
+.spb-infoBox {
+  display: flex;
+  align-items: center;
+  // justify-content: center;
+  margin-bottom: 65px;
+
+  img {
+    border-radius: 15px;
+  }
+}
+
+.spb-info {
+  margin-left: 56px;
+}
+
+.spb-title {
+  margin: 0;
+  margin-bottom: 13px;
+  padding: 0;
+
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 53px;
+  color: #c9ac8c;
+}
+
+.spb-authorName {
+  display: inline-block;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #c9ac8c;
+}
+
+.spb-pages,
+.spb-data,
+.spb-genre,
+.spb-copy {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.6);
+
+  span {
+    margin-left: 10px;
+    color: #ffffff;
+  }
+}
+
+.spb-copy {
+  margin-bottom: 48px;
+}
+
+.spb-subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 48px;
+  padding: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #c9ac8c;
+
+  svg {
+    fill: #ffffff;
+  }
+
+  span {
+    display: inline-block;
+    width: 564px;
+    height: 1px;
+    background-color: rgba(201, 172, 140, 0.6);
+  }
+}
+
+.spb-text {
+  margin: 0;
+  margin-bottom: 47px;
+  padding: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 144.4%;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.formats {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 31px;
+  padding: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #c9ac8c;
+}
+
+.type-list {
+  display: flex;
+  align-items: center;
+  // flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.type-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 26px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #ffffff;
+
+  &:nth-child(4) {
+    margin: 0;
+    flex-grow: 1;
+
+    button {
+      margin-left: auto;
+      padding: 16px 32px;
+      gap: 10px;
+      background-color: #c9ac8c;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 16px;
+      color: #3c2710;
+    }
+  }
+
+  img{
+    margin-bottom: 10px;
+  }
+}
+
+.spb-price {
+  display: inline-block;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.spb-navbar {
+  display: block;
+  margin-bottom: 51px;
+
+  .active {
+    color: #c9ac8c;
+  }
+}
+
+.spb-navLink {
+  display: inline-block;
+  margin-right: 69px;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.spb-blockquoteCard {
+  position: relative;
+  width: 550px;
+  padding: 46px 150px 74px 41px;
+  background-image: linear-gradient(263.94deg, #161616 0%, #1e1e1e 98.06%);
+  border-radius: 15px;
+  margin-bottom: 53px;
+
+  .spb-bgImg {
+    position: absolute;
+    top: 24px;
+    right: 0;
+  }
+
+  &::before {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    font-family:'Rotterburg';
+    font-weight: 400;
+    font-size: 250px;
+    line-height: 316px;
+
+    color: #c9ac8c;
+    content: "“";
+  }
+}
+
+.blockquote-text {
+  margin: 0;
+  margin-bottom: 9px;
+  padding: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.blockquote-element {
+  position: absolute;
+  z-index: 2;
+  bottom: 20px;
+  right: 30px;
+  display: block;
+  color: #ffffff;
+  font-size: 30px;
+  svg {
+    margin-right: 10px;
+  }
+}
+
+.spb-books-head{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 66px;
+}
+
+.spb-books-link{
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+.spb-books-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+
+.spb-books-item {
+  margin-right: 42px;
+}
+
+/* hide scrollbar but allow scrolling */
+.spb-books-list {
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
+}
+
+.spb-books-list::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}

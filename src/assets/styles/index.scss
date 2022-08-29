@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "Steinbeck";
+  src: url("../fonts/steinbec/SteinbeckFC-Reg.woff2") format("woff2"),
+    url("../fonts/steinbec/SteinbeckFC-Reg.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rotterburg";
+  src: url("../fonts/rotterburg/RotterburgStylishFREE-Regular.woff2")
+      format("woff2"),
+    url("../fonts/rotterburg/RotterburgStylishFREE-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/poppins/Poppins-Regular.woff2") format("woff2"),
+    url("../fonts/poppins/Poppins-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/poppins/Poppins-SemiBold.woff2") format("woff2"),
+    url("../fonts/poppins/Poppins-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/poppins/Poppins-Medium.woff2") format("woff2"),
+    url("../fonts/poppins/Poppins-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Steinbeck", "Times New Roman", serif;
+  // background-color: black;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.rotterburg {
+  font-family: "Rotterburg", "Times New Roman", serif;
+}
+
+.poppins {
+  font-family: "Poppins", "Arial", sans-serif;
+}
+
+.container{
+  max-width: 1262px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+img {
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}
