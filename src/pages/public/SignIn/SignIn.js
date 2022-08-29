@@ -31,7 +31,7 @@ export const SignIn = () => {
 
   return (
     <div className="signup-wrapper poppins">
-      <img src={signUp} alt="Sign Up image" className="signup-img" />
+      <img src={signUp} alt="Sign Up " className="signup-img" />
       <div className="form-box">
         <h2 className="signup-title">Sign in</h2>
         <span className="signup-secondary">

@@ -33,7 +33,7 @@ export const SinglePageBook = () => {
       .catch(function (error) {
         console.log(error);
       });
-  }, [id]);
+  }, [id,token]);
 
   useEffect(() => {
     book.author_id &&
@@ -53,7 +53,7 @@ export const SinglePageBook = () => {
         .catch(function (error) {
           console.log(error);
         });
-  }, [book.author_id]);
+  }, [book.author_id,token]);
 
   useEffect(() => {
     book.author_id &&
@@ -73,7 +73,7 @@ export const SinglePageBook = () => {
         .catch(function (error) {
           console.log(error);
         });
-  }, [book.genre_id]);
+  }, [book.genre_id,token,book.author_id]);
 
   let ganre = "";
 
@@ -130,17 +130,17 @@ export const SinglePageBook = () => {
               <div className="types-box">
                 <ul className="type-list">
                   <li className="type-item">
-                    <img src={bookImg} alt="image" />
+                    <img src={bookImg} alt="rasm" />
                     <span>Qog'oz kitob</span>
                     <span className="spb-price">$ {book.price}</span>
                   </li>
                   <li className="type-item">
-                    <img src={headphoneImg} alt="image" />
+                    <img src={headphoneImg} alt="rasm2" />
                     <span>Audio kitob</span>
                     <span className="spb-price"> 6:23 soat</span>
                   </li>
                   <li className="type-item">
-                    <img src={phoneImg} alt="image" />
+                    <img src={phoneImg} alt="rasm3" />
                     <span>Elektron</span>
                     <span className="spb-price"> pdf, epub</span>
                   </li>

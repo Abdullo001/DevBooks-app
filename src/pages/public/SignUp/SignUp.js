@@ -14,7 +14,7 @@ export const SignUp = () => {
 
   const navigate =useNavigate()
 
-  const { token, setToken } = useAuth();
+  const {  setToken } = useAuth();
 
   const handleFormSubmit = (evt) => {
     evt.preventDefault();
@@ -38,7 +38,7 @@ export const SignUp = () => {
   return (
     <div className="container">
       <div className="signup-wrapper poppins">
-        <img src={signUp} alt="Sign Up image" className="signup-img" />
+        <img src={signUp} alt="Sign Up " className="signup-img" />
         <div className="form-box">
           <h2 className="signup-title">Sign Up</h2>
           <span className="signup-secondary">
